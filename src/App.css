@@ -18,3 +18,128 @@ html {
   top: 5%;
   left: 5%;
 }
+
+.clock-container {
+  width: 400px;
+  height: 200px;
+  color: red;
+}
+
+.line {
+  width: 180px;
+  height: 2px;
+  background-color: #777;
+  right: 50%;
+  top: 300px;
+  position: absolute;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-name: spin;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(450deg);
+    transform-origin: top right;
+  }
+  from {
+    transform: rotate(90deg);
+    transform-origin: top right;
+  }
+}
+
+.circle {
+  position: absolute;
+  border: 1px solid #ccc;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  opacity: 0.4;
+  animation-timing-function: linear;
+}
+
+.circle0 {
+  animation-name: timer;
+  border-radius: 30px;
+  right: calc(50% - 30px);
+  top: 270px;
+}
+
+.circle1 {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  right: calc(50% - 30px);
+  top: 270px;
+}
+
+.circle2 {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  right: calc(50% - 60px);
+  top: 240px;
+}
+
+.circle3 {
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  right: calc(50% - 90px);
+  top: 210px;
+}
+
+.circle4 {
+  width: 240px;
+  height: 240px;
+  border-radius: 120px;
+  right: calc(50% - 120px);
+  top: 180px;
+}
+
+.circle5 {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  right: calc(50% - 150px);
+  top: 150px;
+}
+
+.circle6 {
+  width: 360px;
+  height: 360px;
+  border-radius: 180px;
+  right: calc(50% - 180px);
+  top: 120px;
+}
+
+@keyframes timer {
+  0% {
+    width: 0px;
+    height: 0px;
+    right: calc(50%);
+    top: 300px;
+  }
+
+  33% {
+    background-color: green;
+  }
+
+  34% {
+    background-color: yellow;
+  }
+  66% {
+    background-color: yellow;
+  }
+  67% {
+    background-color: red;
+  }
+  100% {
+    width: 360px;
+    height: 360px;
+    border-radius: 180px;
+    right: calc(50% - 180px);
+    top: 120px;
+    background-color: red;
+  }
+}
