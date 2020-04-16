@@ -22,15 +22,31 @@ html {
 .clock-container {
   width: 300px;
   height: 300px;
-  color: red;
+
   border-radius: 100%;
   border-style: solid;
   border-width: 3px;
   border-color: white;
 }
 
+.clock-wait-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 300px;
+  height: 300px;
+
+  color: red;
+}
+
 .clock-hand {
   width: 60px;
+}
+
+.clock-wait-text {
+  color: red;
 }
 
 .rotate {
