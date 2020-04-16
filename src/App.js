@@ -1,4 +1,7 @@
 import React from 'react';
+
+import Powerhour from './Powerhour';
+
 import logo from './powerhourlogo.png';
 import './App.css';
 
